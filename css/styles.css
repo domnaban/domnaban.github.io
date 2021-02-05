@@ -159,6 +159,17 @@ sub {
 sup {
   top: -0.5em;
 }
+p.one {
+  /* color: #000000;
+  text-decoration: underline dotted; */
+  background: #546bd3;
+  background: -webkit-linear-gradient(to right, #5755d4 0%, #546bd3 50%, #5bc6d4 100%);
+  background: -moz-linear-gradient(to right, #5755d4 0%, #546bd3 50%, #5bc6d4 100%);
+  background: linear-gradient(to right, #5755d4 0%, #546bd3 50%, #5bc6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
 
 a {
   color: #000000;
@@ -168,7 +179,7 @@ a {
 
 a.one {
   color: #000000;
-  text-decoration: underline dotted;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -182,14 +193,38 @@ a.three {
   background-color: transparent;
 }
 
+a.four{
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.five {
+  /* color: #FFCC99;
+  text-decoration: none; */
+  background: #FFCC99;
+  background: -webkit-linear-gradient(to right, #e690c9 0%, #FFCC99 100%);
+  background: -moz-linear-gradient(to right, #e690c9 0%, #FFCC99 100%);
+  background: linear-gradient(to right, #e690c9 0%, #FFCC99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 a:hover {
   color: #FFCC99;
   text-decoration: underline;
 }
 
 a.one:hover {
-  color: #000000;
-  text-decoration: underline dotted;
+  /* color: #000000;
+  text-decoration: underline dotted; */
+  background: #546bd3;
+  background: -webkit-linear-gradient(to right, #5755d4 0%, #546bd3 50%, #5bc6d4 100%);
+  background: -moz-linear-gradient(to right, #5755d4 0%, #546bd3 50%, #5bc6d4 100%);
+  background: linear-gradient(to right, #5755d4 0%, #546bd3 50%, #5bc6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 a.two:hover {
@@ -198,8 +233,26 @@ a.two:hover {
 }
 
 a.three:hover {
-  color: #FFCC99;
-  text-decoration: none;
+  /* color: #FFCC99;
+  text-decoration: none; */
+  background: #FFCC99;
+  background: -webkit-linear-gradient(to right, #a4c1e7 0%, #e690c9 100%);
+  background: -moz-linear-gradient(to right, #a4c1e7 0%, #e690c9 100%);
+  background: linear-gradient(to right, #a4c1e7 0%, #e690c9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.four:hover {
+  /* color: #000000;
+  text-decoration: underline dotted; */
+  background: #FFCC99;
+  background: -webkit-linear-gradient(to right, #eb91cd 0%, #FFCC99 100%);
+  background: -moz-linear-gradient(to right, #eb91cd 0%, #FFCC99 100%);
+  background: linear-gradient(to right, #eb91cd 0%, #FFCC99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 a:not([href]):not([class]) {
@@ -10965,7 +11018,7 @@ section#contact form#contactForm .form-group-textarea {
 }
 section#contact form#contactForm .form-group-textarea textarea {
   height: 100%;
-  min-height: 10rem;
+  min-height: 20rem;
 }
 section#contact form#contactForm p.help-block {
   margin: 0;
