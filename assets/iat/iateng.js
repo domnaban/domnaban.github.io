@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://domnaban.github.io/blob/main/assets/iat/iateng.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://github.com/domnaban/domnaban.github.io/blob/main/assets/iat/iateng.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
@@ -39,7 +39,7 @@ define(['pipAPI', 'https://domnaban.github.io/blob/main/assets/iat/iateng.js'], 
 		},	
 
 		base_url : {//Where are your images at?
-			image : 'https://domnaban.github.io/blob/main/assets/iat/images/'
+			image : 'https://github.com/domnaban/domnaban.github.io/blob/main/assets/iat/images/'
 		} 
 	});
 });
