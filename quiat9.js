@@ -19,7 +19,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		//You can also do that from the outside, with a dedicated jsp file.
 		var iatObj =
 		{
-			fullscreen:false, //Should we show the task in full screen? A Qualtrics-only feature because in the usual Minno, we can go full-screen right at the beginning of the study.
+			fullscreen:true, //Should we show the task in full screen? A Qualtrics-only feature because in the usual Minno, we can go full-screen right at the beginning of the study.
         
 			isTouch:false, //Set whether the task is on a touch device.
 			//Set the canvas of the task
@@ -77,10 +77,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'anxious'},
+					{word: 'humiliated'},
 					{word: 'failure'},
 					{word: 'embarassed'},
-					{word: 'afraid'},
+					{word: 'awful'},
 					{word: 'disliked'},
 					{word: 'critisized'},
 					{word: 'shunned'},
@@ -93,14 +93,14 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			{
 				name : 'Liked',
 				title : {
-					media : {word : 'Good words'},
+					media : {word : 'Liked'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 4 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'calm'},
-					{word: 'happy'},
-					{word: 'relaxed'},
+					{word: 'respected'},
+					{word: 'appreciated'},
+					{word: 'acknowledged'},
 					{word: 'safe'},
 					{word: 'welcome'},
 					{word: 'accepted'},
@@ -184,7 +184,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<br/>Put a right finger on the <b>I</b> key for items that belong to the category <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
 				'Press the other key to continue.<br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>'+
+				'This is a timed sorting task. <u>Go as fast as you can</u> while making as few mistakes as possible.<br/><br/></p>'+
 				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',

@@ -28,7 +28,6 @@ define(['pipAPI', 'https://domnabanakou.com/quiat9.js'], function(APIConstructor
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-    		    {image : 'yf1.jpg'}, 
 				{word: 'I'},
 				{word: 'Me'},
 				{word: 'My'},
