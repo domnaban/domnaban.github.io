@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://github.com/domnaban/domnaban.github.io/blob/main/assets/iat/iateng.js'], function(APIConstructor, iatExtension){
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 
 	return iatExtension({
@@ -39,7 +39,7 @@ define(['pipAPI', 'https://github.com/domnaban/domnaban.github.io/blob/main/asse
 		},	
 
 		base_url : {//Where are your images at?
-			image : 'https://github.com/domnaban/domnaban.github.io/blob/main/assets/iat/images/'
+			image : 'https://baranan.github.io/minno-tasks/images/'
 		} 
 	});
 });
