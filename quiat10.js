@@ -42,7 +42,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{ word: 'Ellos' },
 					{ word: 'Suyo' },
-					{ word: 'Ella misma' },
+					{ word: 'Ella' },
 					{ word: 'El' },
 					{ word: 'Sus' },
 					{ word: 'Se' }
@@ -61,7 +61,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					{ word: 'Mi' },
 					{ word: 'Soy' },
 					{ word: 'Mio' },
-					{ word: 'Mi mismo/a' },
+					{ word: 'Mi mismo' },
 					{ word: 'Me' },
 					{ word: 'Yo' }
 				],
@@ -77,13 +77,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 2 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{ word: 'disgustado/a'},
-					{ word: 'odiado/a'},
-					{ word: 'aborrecido/a'},
-					{ word: 'despreciado/a'},
-					{ word: 'avergonzado/a'},
+					{ word: 'disgustado'},
+					{ word: 'odiado'},
+					{ word: 'aborrecido'},
+					{ word: 'despreciado'},
+					{ word: 'avergonzado'},
 					{ word: 'humillado'},
-					{ word: 'indigno/a'},
+					{ word: 'indigno'},
 					{ word: 'fracaso'}
 				],
 				//Stimulus css
@@ -91,21 +91,21 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			},
 			attribute2 :
 			{
-				name : 'Querido/a',
+				name : 'Querido',
 				title : {
-					media: { word: 'Querido/a'},
+					media: { word: 'Querido'},
 					css : {color:'#0000FF','font-size':'1.8em'},
 					height : 2 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{word: 'estimado/a'},
+					{word: 'estimado'},
 					{word: 'popular'},
-					{word: 'aceptado/a'},
-					{word: 'relajado/a'},
-					{word: 'deseado/a'},
-					{word: 'reconocido/a'},
-					{word: 'apreciado/a'},
-					{word: 'respetado/a'}
+					{word: 'aceptado'},
+					{word: 'relajado'},
+					{word: 'deseado'},
+					{word: 'reconocido'},
+					{word: 'apreciado'},
+					{word: 'respetado'}
 				],
 				//Stimulus css
 				stimulusCss : {color:'#0000FF','font-size':'2.3em'}

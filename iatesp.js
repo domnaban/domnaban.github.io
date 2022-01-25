@@ -12,7 +12,7 @@ define(['pipAPI', 'https://domnabanakou.com/quiat10.js'], function(APIConstructo
 			stimulusMedia : [ //Stimuli content as PIP's media objects
 				{word: 'Ellos'},
 				{word: 'Suyo'},
-				{word: 'Ella misma'},
+				{word: 'Ella'},
 				{word: 'El'},
 				{word: 'Sus'},
 				{word: 'Se'}
@@ -31,7 +31,7 @@ define(['pipAPI', 'https://domnabanakou.com/quiat10.js'], function(APIConstructo
 				{word: 'Mi'},
 				{word: 'Soy'},
 				{word: 'Mio'},
-				{word: 'Mi mismo/a'},
+				{word: 'Mi mismo'},
 				{word: 'Me'},
 				{word: 'Yo'}			], 
 			//Stimulus css
