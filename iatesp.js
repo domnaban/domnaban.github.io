@@ -12,7 +12,7 @@ define(['pipAPI', 'https://domnabanakou.com/quiat10.js'], function(APIConstructo
 			stimulusMedia : [ //Stimuli content as PIP's media objects
 				{word: 'Ellos'},
 				{word: 'Suyo'},
-				{word: 'Sí mismo'},
+				{word: 'Ella misma'},
 				{word: 'El'},
 				{word: 'Sus'},
 				{word: 'Se'}
@@ -28,10 +28,10 @@ define(['pipAPI', 'https://domnabanakou.com/quiat10.js'], function(APIConstructo
 				height : 2 //Used to position the "Or" in the combined block.
 			}, 
 			stimulusMedia : [ //Stimuli content as PIP's media objects
-				{word: 'Mí'},
+				{word: 'Mi'},
 				{word: 'Soy'},
-				{word: 'Mío'},
-				{word: 'Mí mismo/a'},
+				{word: 'Mio'},
+				{word: 'Mi mismo/a'},
 				{word: 'Me'},
 				{word: 'Yo'}			], 
 			//Stimulus css

@@ -42,7 +42,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				stimulusMedia : [ //Stimuli content as PIP's media objects
 					{ word: 'Ellos' },
 					{ word: 'Suyo' },
-					{ word: 'Sí mismo' },
+					{ word: 'Ella misma' },
 					{ word: 'El' },
 					{ word: 'Sus' },
 					{ word: 'Se' }
@@ -58,10 +58,10 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					height : 2 //Used to position the "Or" in the combined block.
 				},
 				stimulusMedia : [ //Stimuli content as PIP's media objects
-					{ word: 'Mí' },
+					{ word: 'Mi' },
 					{ word: 'Soy' },
-					{ word: 'Mío' },
-					{ word: 'Mí mismo/a' },
+					{ word: 'Mio' },
+					{ word: 'Mi mismo/a' },
 					{ word: 'Me' },
 					{ word: 'Yo' }
 				],
@@ -142,12 +142,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:"0.6em"; font-family:arial">' +
-			'Si te equivocas se aparecerá una <font color="#ff0000"><b>X</b></font> roja . ' +
-			'Podrás arreglar el error apretando el otro botón.<p/>',
+			'Si te equivocas se aparecera una <font color="#ff0000"><b>X</b></font> roja . ' +
+			'Puedes arreglar el error apretando la otra tecla.<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:"1.4em"; font-family:arial">' +
-			'Si te equivocas se aparecerá una<font color = "#ff0000">< b > X</b></font > roja. ' +
-			'Podrás arreglar el error apretando el otro botón.<p/>',
+			'Si te equivocas se aparecera una<font color = "#ff0000">< b > X</b></font > roja. ' +
+			'Puedes arreglar el error apretando la otra tecla.<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -165,8 +165,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			
 			instWidth : 99, //The width of the instructions stimulus
             
-			finalText: 'Pulsa la BARRA ESPACIADORA para seguir',
-			finalTouchText: 'Toque el área verde inferior para continuar',
+			finalText: 'Pulsa la barra espaciadora para seguir',
+			finalTouchText: 'Toque la area verde inferior para continuar',
 
 			touchMaxStimulusWidth : '50%', 
 			touchMaxStimulusHeight : '50%', 
@@ -180,12 +180,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Mantén tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen en la categoría <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Mantén tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen en la categoría <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
-				'Si te equivocas se aparecerá una <font color="#ff0000"><b>X</b></font> roja.' +
-				'Podrás arreglar el error apretando el otro botón.<br/>' +
-				'Se trata de una tarea de ordenación cronometrada. <u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor número de errores posibles.<br/><br/></p>'+
-				'<p align="center">Pulsa la <b>BARRA ESPACIADORA</b> para empezar.</font></p></div>',
+				'Manten tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen en la categoria <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Manten tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen en la categoria <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Si te equivocas se aparecera una <font color="#ff0000"><b>X</b></font> roja.' +
+				'Puedes arreglar el error apretando la otra tecla.<br/>' +
+				'Se trata de una tarea de ordenacion cronometrada. <u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor numero de errores posibles.<br/><br/></p>'+
+				'<p align="center">Pulsa la <b>barra espaciadora</b> para empezar.</font></p></div>',
 			instAttributePracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -206,13 +206,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Mantén tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen en la categoría <font color="#336600">leftCategory</font>. ' +
-				'<br/>Mantén tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen en la categoría <font color="#336600">rightCategory</font>.<br/>' +
-				'Los elementos aparecerán uno a la vez.<br/><br/>' +
-				'Si te equivocas se aparecerá una <font color="#ff0000"><b>X</b></font> roja.' +
-				'Podrás arreglar el error apretando el otro botón.<br/>' +
-				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor número de errores posibles.<br/><br/></p>'+
-				'<p align="center">Pulsa la <b>BARRA ESPACIADORA</b> para empezar.</font></p></div>',
+				'Manten tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen en la categoria <font color="#336600">leftCategory</font>. ' +
+				'<br/>Manten tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen en la categoria <font color="#336600">rightCategory</font>.<br/>' +
+				'Los elementos apareceran uno a la vez.<br/><br/>' +
+				'Si te equivocas se aparecera una <font color="#ff0000"><b>X</b></font> roja.' +
+				'Puedes arreglar el error apretando la otra tecla.<br/>' +
+				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor numero de errores posibles.<br/><br/></p>'+
+				'<p align="center">Pulsa la <b>barra espaciadora</b> para empezar.</font></p></div>',
 			instCategoriesPracticeTouch: [
 				'<div>',
 					'<p align="center">',
@@ -235,11 +235,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'Pulsa la tecla <b>E</b> para <font color="#336600">leftCategory</font> y para <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Pulsa la tecla the <b>I</b> para <font color="#336600">rightCategory</font> y para <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Cada elemento pertenece a una sola categoría.<br/><br/>' +
-				'Si te equivocas se aparecerá una <font color="#ff0000"><b>X</b></font> roja. ' +
-				'Podrás arreglar el error apretando el otro botón.<br/>' +
-				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor número de errores posibles.<br/><br/></p>' +
-				'<p align="center">Pulsa la <b>BARRA ESPACIADORA</b> para empezar.</font></p></div>',
+				'Cada elemento pertenece a una sola categoria.<br/><br/>' +
+				'Si te equivocas se aparecera una <font color="#ff0000"><b>X</b></font> roja. ' +
+				'Puedes arreglar el error apretando la otra tecla.<br/>' +
+				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor numero de errores posibles.<br/><br/></p>' +
+				'<p align="center">Pulsa la <b>barra espaciadora</b> para empezar.</font></p></div>',
 			instFirstCombinedTouch:[
 				'<div>',
 					'<p align="center">',
@@ -262,9 +262,9 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'Esta parte es la misma que la parte anterior.<br/>' +
 				'Pulsa la tecla <b>E</b> para <font color="#336600">leftCategory</font> y para <font color="#0000ff">leftAttribute</font>.<br/>' +
 				'Pulsa la tecla <b>I</b> para <font color="#336600">rightCategory</font> y para  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Cada elemento pertenece a una sola categoría.<br/><br/>' +
-				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor número de errores posibles.<br/><br/></p>' +
-				'<p align="center">Pulsa la <b>BARRA ESPACIADORA</b> para empezar.</font></p></div>',
+				'Cada elemento pertenece a una sola categoria.<br/><br/>' +
+				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor numero de errores posibles.<br/><br/></p>' +
+				'<p align="center">Pulsa la <b>barra espaciadora</b> para empezar.</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
@@ -284,11 +284,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>¡Cuidado, las categorías han cambiado de posición!</b><br/>' +
-				'Mantén tu dedo izquierdo en la tecla <b>E</b> para <font color="#336600">leftCategory</font>.<br/>' +
-				'Mantén tu dedo derecho en la tecla <b>I</b> para <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor número de errores posibles.<br/><br/></p>' +
-				'<p align="center">Pulsa la <b>BARRA ESPACIADORA</b> para empezar.</font></p></div>',
+				'<b>Cuidado, las categorias han cambiado de posicion!</b><br/>' +
+				'Manten tu dedo izquierdo en la tecla <b>E</b> para <font color="#336600">leftCategory</font>.<br/>' +
+				'Manten tu dedo derecho en la tecla <b>I</b> para <font color="#336600">rightCategory</font>.<br/><br/>' +
+				'<u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor numero de errores posibles.<br/><br/></p>' +
+				'<p align="center">Pulsa la <b>barra espaciadora</b> para empezar.</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
