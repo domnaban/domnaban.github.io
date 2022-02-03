@@ -180,8 +180,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Manten tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen en la categoria <font color="#0000ff">leftAttribute.</font>' +
-				'<br/>Manten tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen en la categoria <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
+				'Manten tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen a la categoria <font color="#0000ff">leftAttribute.</font>' +
+				'<br/>Manten tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen a la categoria <font color="#0000ff">rightAttribute</font>.<br/><br/>' +
 				'Si te equivocas se aparecera una <font color="#ff0000"><b>X</b></font> roja.' +
 				'Puedes arreglar el error apretando la otra tecla.<br/>' +
 				'Se trata de una tarea de ordenacion cronometrada. <u>VE TAN DE PRISA COMO PUEDAS</u> cometiendo el menor numero de errores posibles.<br/><br/></p>'+
@@ -206,8 +206,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'Manten tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen en la categoria <font color="#336600">leftCategory</font>. ' +
-				'<br/>Manten tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen en la categoria <font color="#336600">rightCategory</font>.<br/>' +
+				'Manten tu dedo izquierdo en la tecla <b>E</b> para los elementos que pertenecen a la categoria <font color="#336600">leftCategory</font>. ' +
+				'<br/>Manten tu dedo derecho en la tecla <b>I</b> para los elementos que pertenecen a la categoria <font color="#336600">rightCategory</font>.<br/>' +
 				'Los elementos apareceran uno a la vez.<br/><br/>' +
 				'Si te equivocas se aparecera una <font color="#ff0000"><b>X</b></font> roja.' +
 				'Puedes arreglar el error apretando la otra tecla.<br/>' +
