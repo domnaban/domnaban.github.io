@@ -243,13 +243,25 @@ a.three:hover {
   -webkit-text-fill-color: transparent;
 }
 
-a.four:hover {
-  /* color: #000000;
-  text-decoration: underline dotted; */
+/* a.four:hover {
+
   background: #FFCC99;
   background: -webkit-linear-gradient(to right, #eb91cd 0%, #FFCC99 100%);
   background: -moz-linear-gradient(to right, #eb91cd 0%, #FFCC99 100%);
   background: linear-gradient(to right, #eb91cd 0%, #FFCC99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+} 
+*/
+
+a.four:hover {
+  /* color: #000000;
+  text-decoration: underline dotted; */
+  background: #FFCC99;
+  background: -webkit-linear-gradient(to right, #a4c1e7 0%, #e690c9 100%);
+  background: -moz-linear-gradient(to right, #a4c1e7 0%, #e690c9 100%);
+  background: linear-gradient(to right, #a4c1e7 0%, #e690c9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -10870,7 +10882,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #FFCC99;
+  background-color: #9898e0;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
