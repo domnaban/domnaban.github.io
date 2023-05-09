@@ -2808,7 +2808,7 @@ fieldset:disabled a.btn {
 .gradient-button-1 {background-image: linear-gradient(to right, #f5aec5 0%, #F7BB97 51%, #f5aec5 100%)}
 .gradient-button-1:hover { background-position: right center; }
 
-.gradient-button-2 {background-image: linear-gradient(to right, #92e7d9 0%, #EAECC6 51%, #92e7d9 100%)}
+.gradient-button-2 {background-image: linear-gradient(to right, #13d1b1 0%, #EAECC6 51%, #13d1b1 100%)}
 .gradient-button-2:hover { background-position: right center; }
 
 .gradient-button-3 {background-image: linear-gradient(to right, #F7BB97 0%, #e4e3a3 51%, #F7BB97 100%)}
