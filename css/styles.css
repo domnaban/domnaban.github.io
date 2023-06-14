@@ -710,6 +710,21 @@ pre code {
     position: relative;
 }
 
+.parallax-three {
+  /* The image used */
+  background-image: url("../assets/img/photography/monolithi.jpg");
+
+  /* Set a specific height */
+  min-height: 900px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .parallax_text {
   position: absolute;
   top: 50%;
@@ -11058,6 +11073,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+}
+
+/* Photography Black to Color effect on hover */
+.gray-clr {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.gray-clr:hover {
+  filter: grayscale(0%);
 }
 
 .footer {
