@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<title>Portfolio</title>
+<link href="assets/img/hmd.ico" rel="icon" type="image/x-icon"/>
+<!-- Font Awesome icons (free version)-->
+<script crossorigin="anonymous" src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet"/>
+<style id="publication-project-styles">
+/* Compact research-project layout inside portfolio modals */
+.portfolio-modal .modal-body { text-align: left; }
+.portfolio-modal .modal-body > h2,
+.portfolio-modal .modal-body > .item-intro { text-align: center; }
+.portfolio-modal .video-portfolio,
+.portfolio-modal .modal-body iframe { max-width: 100%; }
+.portfolio-modal .video-portfolio { width: 100%; height: auto; }
+
+.project-snapshot {
+    margin: 1.5rem 0 1.25rem;
+    padding: 1rem 1.15rem;
+    background: #f8f9fa;
+    border-left: 4px solid #212529;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.publication-meta {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+.publication-meta li { margin-bottom: 0.2rem; }
+
+.project-case-study {
+    margin: 1.6rem 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.project-detail-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1.25rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.project-detail-row:last-child { border-bottom: 0; }
+.project-detail-label {
+    font-weight: 700;
+    color: #212529;
+}
+.project-detail-value {
+    margin: 0;
+    line-height: 1.65;
+}
+.role-placeholder {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.publication-abstract {
+    margin-top: 1.5rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background: #fff;
+}
+.publication-abstract summary {
+    padding: 1rem 1.15rem;
+    cursor: pointer;
+    list-style: none;
+}
+.publication-abstract summary::-webkit-details-marker { display: none; }
+.publication-abstract summary:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+.abstract-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: baseline;
+    margin-bottom: 0.45rem;
+    font-weight: 700;
+}
+.abstract-toggle {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.abstract-toggle::after { content: "Read full abstract"; }
+.publication-abstract[open] .abstract-toggle::after { content: "Hide abstract"; }
+.abstract-preview {
+    display: block;
+    color: #6c757d;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.55;
+}
+.publication-abstract[open] .abstract-preview { display: none; }
+.abstract-full {
+    padding: 0 1.15rem 1.1rem;
+    line-height: 1.7;
+}
+.abstract-full p { margin-bottom: 0; }
+
+@media (max-width: 767.98px) {
+    .project-detail-row { grid-template-columns: 1fr; gap: 0.3rem; }
+    .abstract-heading { align-items: flex-start; }
+}
+</style></head>
+<body id="page-top">
+<!-- <button onclick="topFunction()" id="TopBtn" title="Go to top"><b>UP</b></button> -->
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<div class="container">
+<!-- <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="assets/img/navbar-logo.svg" alt="" /></a> -->
+<ul class="navbar-nav text-uppercase ml-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+</ul>
+<button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav text-uppercase ml-auto">
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="speaking.html">Speaking</a></li>
+<li class="nav-item"><a class="nav-link" href="press.html">Press</a></li>
+<li class="nav-item"><a class="nav-link" href="publications.html">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link" href="hobbies.html">My Hobbies</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Masthead-->
+<header class="masthead" style="background-image: url(assets/img/headers/header-contact3.jpg)">
+<div class="masthead-overlay"></div>
+<div class="container">
+<div class="masthead-heading text-white">Stuff I have worked on.</div>
+</div>
+</header>
+<!-- Portfolio Grid-->
+<section class="page-section">
+<div class="container">
+<div class="text-center">
+<h2 class="section-heading text-uppercase">VR Projects</h2>
+<p class="item-intro text-muted">Some of the stuff I have worked on.</p>
+</div>
+<div class="row">
+<div class="row">
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo9">
+<img alt="" class="project-image" src="assets/img/portfolio/reminiscence.png"/>
+<div class="project-middle">
+<div class="project-text">Reminiscence Theory in VR</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo8">
+<img alt="" class="project-image" src="assets/img/portfolio/touch.png"/>
+<div class="project-middle">
+<div class="project-text">Affective Touch in VR</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo7">
+<img alt="" class="project-image" src="assets/img/portfolio/publicspeaking.png"/>
+<div class="project-middle">
+<div class="project-text">VRET Fear of Public Speaking </div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo0">
+<img alt="" class="project-image" src="assets/img/portfolio/apraxia.png"/>
+<div class="project-middle">
+<div class="project-text">Gesture Performance Schizophrenia </div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo1">
+<img alt="" class="project-image" src="assets/img/portfolio/social.jpg"/>
+<div class="project-middle">
+<div class="project-text">Bias and Social Context</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo2">
+<img alt="" class="project-image" src="assets/img/portfolio/einstein.jpg"/>
+<div class="project-middle">
+<div class="project-text">BEinstein</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo3">
+<img alt="" class="project-image" src="assets/img/portfolio/parents.jpg"/>
+<div class="project-middle">
+<div class="project-text">Parental Empathy</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo4">
+<img alt="" class="project-image" src="assets/img/portfolio/speaking.jpg"/>
+<div class="project-middle">
+<div class="project-text">Illusory Agency</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo5">
+<img alt="" class="project-image" src="assets/img/portfolio/bias.jpg"/>
+<div class="project-middle">
+<div class="project-text">Racial Bias</div>
+</div>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#ytvideo6">
+<img alt="" class="project-image" src="assets/img/portfolio/child.jpg"/>
+<div class="project-middle">
+<div class="project-text">Child Embodiment</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Use this to center image if no content left/right -->
+<!-- <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="prj-container">
+                                </div>
+                            </div> -->
+<div class="col-lg-4 col-sm-6 mb-4">
+<div class="prj-container">
+<a class="portfolio-link" data-toggle="modal" href="#modalvideo1">
+<img alt="" class="project-image" src="assets/img/portfolio/childvoice.jpg"/>
+<div class="project-middle">
+<div class="project-text">A Child's Voice</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<!-- Journal Articles-->
+<section class="page-section bg-light">
+<div class="container">
+<!--2020-->
+<div class="text-center">
+<h2 class="section-heading text-uppercase">Journal Articles</h2>
+</div>
+<!-- <h2>Journal Articles</h2>
+                <hr class="rounded">
+                <br><br> -->
+<div class="row">
+<div class="col-md-3">
+<h2>2026</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.sciencedirect.com/science/article/abs/pii/S0747563226002438" target="_blank">Walking in her shoes: Virtual embodiment of a famous female scientist reduces implicit gender–science associations.</a> </h5>
+<small>M Beneda, J Spielmann, A Ramadhan Alahmadi, D Banakou, A C Vial (2026)<br/>                         
+                        Comput. in Hum. Behav., 186, 109146.</small>
+<br/><br/>
+<h5><a class="four" href="https://www.mdpi.com/2813-2084/5/3/40" target="_blank">Exploring Virtual Embodiment and Implicit Racial Bias in Adolescents and Adults.</a> </h5>
+<small>E Nava, D Banakou, M Christofi,C Kyrlitsias, M Girondini, D Michael-Grigoriou (2026)<br/>                         
+                        Virtual Worlds 2026, 5, 40.</small>
+<br/><br/>
+<h5><a class="four" href="https://formative.jmir.org/2026/1/e88338" target="_blank">Counterclockwise Virtual Reality–Based Embodiment of a Younger Self and Revisit of a Past Iconic Event in Older Adults: Between-Groups Study of Cognitive and Physical Performance.</a> </h5>
+<small>D Banakou, R Itatani, R Montserrat,C Porta-Mas, D Bartrés-Faz, E Bodner, M Mataro, Mel Slater (2026)<br/>                         
+                        JMIR Form Res 2026 10:e88338.</small>
+<br/><br/>
+</div>
+<div class="col-md-3">
+<h2>2025</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2025.1581240/full" target="_blank">Social facilitation within immersive virtual reality enhances perseverance in stroke rehabilitation training.</a> </h5>
+<small>C Hadjipanayi, D Sokratous, C Kyrlitsias, D Banakou, D Michael-Grigoriou (2025)<br/>                         
+                        Front. Virtual Real. 6:1581240.</small>
+<br/><br/>
+<h5><a class="four" href="https://link.springer.com/chapter/10.1007/978-3-031-87158-0_7" target="_blank">Virtual Reality in Stroke Rehabilitation and Treatment: Focusing on the Patient’s Experience and Needs.</a> </h5>
+<small>C Hadjipanayi, D Banakou,  D Michael-Grigoriou (2025)<br/>                         
+                        In: Charalambous, A. (eds) Critical Perspectives on Technological Innovations in Healthcare. Springer, Cham pp 101-116.</small>
+<br/><br/>
+<h5><a class="four" href="https://dl.acm.org/doi/full/10.1145/3706370.3731639" target="_blank">vER: Virtual Human Companionship for Patients in Preoperative Care.</a> </h5>
+<small>A Pandhare, D Skulikj, J Lee, P Mikhiel, D Banakou (2025)<br/>                         
+                        IMX '25: Proceedings of the 2025 ACM International Conference on Interactive Media Experiences, Pages 468 - 472.</small>
+<br/><br/>
+<h5><a class="four" href="https://link.springer.com/chapter/10.1007/978-3-031-97257-7_8" target="_blank">Adaptive Virtual Reality Meditation for Adults with ADHD.</a> </h5>
+<small>A Zhagufarova, D Banakou, H Salam (2025)<br/>                         
+                        In: Brooks, A.L., Banakou, D., Ceperkovic, S. (eds) ArtsIT, Interactivity and Game Creation. ArtsIT 2024. Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering, vol 651. Springer, Cham.</small>
+<br/><br/>
+<h5><a class="four" href="https://link.springer.com/chapter/10.1007/978-3-031-97257-7_10" target="_blank">Tapping into Touch Preferences and Individual Behaviours: Assessing and Improving the HandsOn Mobile App.</a> </h5>
+<small>M T Fairhurst, W Sun, C Hadjipanayi, D Michael-Grigoriou, D Banakou (2025)<br/>                         
+                        In: Brooks, A.L., Banakou, D., Ceperkovic, S. (eds) ArtsIT, Interactivity and Game Creation. ArtsIT 2024. Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering, vol 651. Springer, Cham.</small>
+<br/><br/>
+</div>
+<div class="col-md-3">
+<h2>2024</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://link.springer.com/article/10.1007/s10055-024-01056-2" target="_blank">Multisensory experiences of affective touch in virtual reality enhance engagement, body ownership, pleasantness, and arousal modulation.</a> </h5>
+<small>W Sun, D Banakou, J Świdrak, I Valori, M Slater, M T Fairhurst  (2024)<br/>                         
+                        Virtual Reality 28, 162.</small>
+<br/><br/>
+<h5><a class="four" href="https://www.mdpi.com/2813-2084/3/4/24" target="_blank">Development of a Modular Adjustable Wearable Haptic Device for XR Applications.</a> </h5>
+<small>A Najm, D Banakou, D Michael-Grigoriou (2024)<br/>                         
+                        Virtual Worlds 2024, 3, 436-458.</small>
+<br/><br/>
+<h5><a class="four" href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)13612-2" target="_blank">Virtual reality exergames for enhancing engagement in stroke rehabilitation: A narrative review.</a> </h5>
+<small>C Hadjipanayi, D Banakou, D Michael-Grigoriou (2024)<br/>                         
+                        Heliyon, 10:18, e37581</small>
+<br/><br/>
+<h5><a class="four" href="https://formative.jmir.org/2024/1/e52212" target="_blank">Desensitizing Anxiety Through Imperceptible Change: Feasibility Study on a Paradigm for Single-Session Exposure Therapy for Fear of Public Speaking.</a> </h5>
+<small>D Banakou, T Johnston, A Beacco, G Senel, M Slater (2024)<br/>                         
+                        JMIR Form Res 2024;8:e52212</small>
+<br/><br/>
+<h5><a class="four" href="https://link.springer.com/article/10.1007/s00779-024-01812-w" target="_blank">Cultivating empathy through narratives in virtual reality: a review.</a> </h5>
+<small>C Hadjipanayi, M Christofi, D Banakou, D Michael-Grigoriou (2024)<br/>                         
+                        Personal and Ubiquitous Computing 10.1007/s00779-024-01812-w</small>
+<br/><br/>
+</div>
+<div class="col-md-3">
+<h2>2023</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/frvir.2023.1242587/full" target="_blank">Haptic feedback in a virtual crowd scenario improves the emotional response.</a> </h5>
+<small>RK Venkatesan, D Banakou, M Slater, M Manivannan (2023)<br/>                         
+                            Frontiers in Virtual Reality Sec. Haptics 4:1242587</small>
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/frvir.2023.1294539/full" target="_blank">A comparison of two methods for moving through a virtual environment: walking in place and interactive redirected walking.</a> </h5>
+<small>D Banakou, M Slater (2023)<br/>                         
+                            Frontiers in Virtual Reality Sec. Virtual Reality and Human Behaviour 4:1294539</small>
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1191601/full" target="_blank">Using virtual reality to assess gesture performance deficits in schizophrenia patients.</a> </h5>
+<small>A Pavlidou, G Gorisse, D Banakou, S Walther (2023)<br/>                         
+                            Frontiers in Psychiatry 14:1191601</small>
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/frvir.2023.1065863/full" target="_blank">Art as therapy in virtual reality: A scoping review.</a> </h5>
+<small>C Hadjipanayi, D Banakou, D Michael-Grigoriou  (2023)<br/>                         
+                            Frontiers in Virtual Reality 4:1065863</small>
+<br/><br/>
+</div>
+<div class="col-md-3">
+<h2>2022</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://pubmed.ncbi.nlm.nih.gov/36034584/" target="_blank">The Sentiment of a Virtual Rock Concert.</a> </h5>
+<small>M Slater, C Cabriera, G Senel, D Banakou, A Beacco, R Oliva, J Gallego (2022)<br/>                         
+                        in Virtual Reality 23:1-25</small>
+<br/><br/>
+<h5><a class="four" href="https://static.frontiersin.org/articles/10.3389/frvir.2022.914392/full" target="_blank">A Separate Reality: An Update on Place Illusion and Plausibility in Virtual Reality.</a> </h5>
+<small>M Slater, D Banakou, A Beacco, J Gallego, F Macia-Varela, R Oliva (2022)<br/>                         
+                        Frontiers in Virtual Reality 3:914392</small>
+<br/><br/>
+</div>
+<div class="col-md-3">
+<h2>2021</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.nature.com/articles/s41598-021-03373-x" target="_blank">Self-observation of a virtual body-double engaged in social interaction reduces persecutory thoughts.</a> </h5>
+<small>G Gorisse, G Şenel, D Banakou, A Beacco, R Oliva, D Freeman, M Slater (2021)<br/>                         
+                            Scientific Repports 11:23923</small>
+<br/><br/>
+<h5><a class="four" href="https://journals.sagepub.com/doi/full/10.1177/09637214211046954" target="_blank">The Golden Rule as a Paradigm for Fostering Prosocial Behavior With Virtual Reality.</a> </h5>
+<small>M Slater, D Banakou (2021)<br/>                         
+                            Current Directions in Psychological Science</small>
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/frvir.2021.695673/full" target="_blank">The Influence of Embodiment as a Cartoon Character on Public Speaking Anxiety.</a> </h5>
+<small>A I Bellido Rivas, X Navarro, D Banakou, R Oliva, V Orvalho, M Slater (2021)<br/>
+                            Frontiers in Virtual Reality 11:2281</small>
+<br/><br/>
+<h5><a class="four" href="https://royalsocietypublishing.org/doi/10.1098/rsos.210537" target="_blank">Evaluating participant responses to a virtual reality experience using reinforcement learning.</a> </h5>
+<small> J Llobera, A Beacco, R Oliva, G Şenel, D Banakou, Mel Slater (2021)
+                            <br/>Royal Society Open Science 8:9</small>
+
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.691909/full" target="_blank">Editorial: Neuropsychological and Cognitive-Behavioral Assessment of Neurodegenerative Disease and Rehabilitation Using New Technologies and Virtual Reality.</a> </h5>
+<small> M Matamala-Gomez, F Stasolla, S Seinfeld, A O. Caffò, D Banakou, S Bottiroli (2021)
+                            <br/>Frontiers in Psychology 12:691909</small>
+
+<br/><br/>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2020</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://royalsocietypublishing.org/doi/10.1098/rsos.201848" target="_blank"> Virtual body ownership and its consequences for implicit racial bias are dependent on social context.</a> </h5>
+<small> D Banakou, A Beacco, S Neyret, M Blasco-Oliver, S Seinfeld, Mel Slater (2020)
+                            <br/>Royal Society Open Science 7:201848</small>
+
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/frvir.2020.561558/full" target="_blank">The Rocketbox library and the utility of freely available rigged avatars for procedural animation of virtual humans and embodiment.</a> </h5>
+<small> M Gonzalez-Franco, E Ofek, Y Pan, A Antley, A Steed, B Spanlang, A Maselli, D Banakou, N Pelechano, S Orts-Escolano, V Orvalho, L Trutoiu, M Wojcik, M V Sanchez-Vives, J Bailenson, M Slater, J Lanier (2020)
+                            <br/>Frontiers in Virtual Reality 1:561558</small>
+
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fpsyg.2020.510787/full" target="_blank">Exploring the effect of cooperation in reducing implicit racial bias and its relationship with dispositional empathy and political attitudes.</a> </h5>
+<small>I Patané<sup> † </sup>, A Lelgouarch<sup> † </sup>, D Banakou<sup> † </sup>, G Verdelet, C Desoche, E Koun, R Salemme, M Slater, A Farnè (2020)<br/>
+                            Frontiers in Psychology, 11:2281</small>
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fpsyg.2020.02254/full" target="_blank">Social Conformity in Immersive Virtual Environments: The Impact of Agents’ Gaze Behavior.</a> </h5>
+<small> C Kyrlitsias, D Michael-Grigoriou, D Banakou, M Christofi (2020)
+                            <br/>Frontiers in Psychology 11:2254</small>
+
+<br/><br/>
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fcomp.2020.00023/full" target="_blank">A Virtual Τour of a Hardly Accessible Archaeological Site: the Effect of Immersive Virtual Reality in User Experience, Learning and Attitude Change.</a> </h5>
+<small> C Kyrlitsias, M Christofi, D Michael-Grigoriou, D Banakou, A Ioannou (2020)
+                            <br/>Frontiers in Computer Science 2:23</small>
+
+<br/><br/>
+</div>
+</div>
+<br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2019</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.sciencedirect.com/science/article/pii/S0010027718303056" target="_blank">A Mechanistic Account of Bodily Resonance and Implicit Bias.</a> </h5>
+<small> R Bedder, D Bush, D Banakou, T Peck, M Slater, N Burgess (2019)
+                            <br/>Cognition 184 (1-10)</small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2018</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00917/full" target="_blank">Virtually Being Einstein Results in an Improvement in Cognitive Task Performance and a Decrease in Age Bias.</a> </h5>
+<small> D Banakou, S Kishore, M Slater (2018)
+                            <br/>Frontiers in Psychology 9:917</small>
+
+<br/><br/>
+<h5><a class="four" href="https://www.nature.com/articles/s41598-018-21036-2" target="_blank">Reducing risk and improving maternal perspective-taking and empathy using virtual embodiment.</a> </h5>
+<small> C Hamilton-Giachritsis, D Banakou, M Quiroga-Garcia, C Giachritsis, M Slater (2018)
+                            <br/>Scientific Reports 8:14227</small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2017</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.nature.com/articles/s41598-017-14620-5" target="_blank">Embodiment in a virtual body that speaks produces agency over the speaking but does not necessarily influence subsequent real speaking.</a> </h5>
+<small> D Banakou, M Slater (2017) 
+                            <br/>Scientific Reports 7:14227</small>
+
+<br/><br/>
+<h5><a class="four" href="https://www.nature.com/articles/s41598-017-09497-3" target="_blank">Embodiment in a Child-Like Talking Virtual Body Influences Object Size Perception, Self-Identification, and Subsequent Real Speaking.</a> </h5>
+<small> A Tajadura-Jiménez<sup> † </sup>, D Banakou<sup> † </sup>, N Bianchi-Berthouze, M Slater (2017) 
+                            <br/>Scientific Reports 7:9637</small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2016</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.frontiersin.org/articles/10.3389/fnhum.2016.00601/full" target="_blank">Virtual Embodiment of White People in a Black Virtual Body Leads to a Sustained Reduction in their Implicit Racial Bias.</a> </h5>
+<small> D Banakou, PD Hanumanthu, M Slater (2016)
+                            <br/>Frontiers in Human Neuroscience 10:601 </small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2014</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.pnas.org/content/111/49/17678.abstract" target="_blank">Body ownership causes illusory self-attribution of speaking and influences subsequent real speaking.</a> </h5>
+<small> D Banakou, M Slater (2014)
+                            <br/>Proceedings of the National Academy of Sciences  U S A (PNAS) 111(49):17678-83 </small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2013</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://www.pnas.org/content/110/31/12846.abstract" target="_blank">Illusory ownership of a virtual child body causes overestimation of object sizes and implicit attitude changes.</a> </h5>
+<small> D Banakou, R Groten, M Slater (2013)
+                            <br/>Proceedings of the National Academy of Sciences  U S A (PNAS)  1(6):12846–12851</small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2011</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://link.springer.com/chapter/10.1007/978-3-642-24571-8_6" target="_blank">Computer Based Video and Virtual Environments in the Study of the Role of Emotions in Moral Behavior. </a> </h5>
+<small> X Pan, D Banakou, M Slater (2011) 
+                            <br/> Affective Computing and Intelligent Interaction 6975:52-61 </small>
+
+</div>
+</div>
+<br/><br/>
+<div class="row">
+<div class="col-md-3">
+<h2>2010</h2>
+</div>
+<div class="col-md-9">
+<h5><a class="four" href="https://journals.tdl.org/jvwr/index.php/jvwr/article/view/779" target="_blank">The effects of Avatars’ Gender and Appearance on Social Behaviour in Virtual Worlds. </a> </h5>
+<small> D Banakou, K Chorianopoulos (2010)
+                            <br/> Journal of Virtual Worlds Research 2(5):3-16 </small>
+
+</div>
+</div>
+</div>
+
+</section>
+<!-- Footer-->
+<footer class="footer py-4">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-4 text-lg-left">Copyright © Domna Banakou 2025</div>
+<div class="col-lg-4 my-3 my-lg-0">
+<a class="btn btn-dark btn-social mx-2" href="https://twitter.com/domnaban?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+<a class="btn btn-dark btn-social mx-2" href="https://es.linkedin.com/in/domna-banakou-382a672a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<!-- <a class="btn btn-dark btn-social mx-2" href="https://www.pinterest.es/domnaban/_saved/" target="_blank"><i class="fab fa-pinterest"></i></a>-->
+</div>
+<div class="col-lg-4 text-lg-right">
+<a href="https://goo.gl/maps/LHAuzvdw7jjr7pYy7" target="_blank"> <br/> </a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Portfolio Modals-->
+<!-- Modal 0-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo9" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Counterclockwise Virtual Reality–Based Embodiment of a Younger Self and Revisit of a Past Iconic Event in Older Adults: Between-Groups Study of Cognitive and Physical Performance</h2>
+<p class="item-intro text-muted">Exploring Reminiscence Theory in Immersive VR.</p>
+<video class="video-portfolio" controls="" src="assets/img/portfolio/reminiscence.mp4" type="video/MP4"></video>
+<br/>
+<div class="project-snapshot"><strong>At a glance — </strong>Can brief VR experiences that embody older adults as their younger selves influence how old they feel and how they perform? This study tested a VR adaptation of reminiscence therapy using personalized younger-self embodiment.</div><ul class="publication-meta"><li>Domna Banakou,  Reiya Itatani, Roger Montserrat, Clàudia Porta-Mas, David Bartrés-Faz, Ehud Bodner, Maria Mataro &amp; Mel Slater</li><li> JMIR Form Res 2026, 10:e88338, 22 April 2026</li><li>doi:<a class="one" href="https://doi.org/10.2196/88338" target="_blank">10.2196/88338</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; administration; VR development; supervision; data curation; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A between-groups study with 23 older adults compared personalized younger-self versus current-self embodiment across two VR exposures and follow-up assessments.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Translated foundational embodiment research into ageing and wellbeing. Two brief younger-self VR exposures were associated with changes in subjective age, wellbeing and selected cognitive/physical outcomes, supporting further investigation of immersive interventions for older adults.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">Can brief VR experiences that embody older adults as their younger selves influence how old they feel and how they perform? This study tested a VR adaptation of reminiscence therapy using personalized younger-self embodiment.</span></summary><div class="abstract-full"><p>The original counterclockwise study carried out in the late 1970s provided an extreme example of "reminiscence therapy," reporting improvements in older adults' cognitive and physical functioning after they had lived for 5 days in a house set up as if decades earlier (the 1950s). We tested a virtual reality (VR) analog of this approach, enhanced by embodying participants in a virtual body that looked like themselves at the corresponding younger age. This study aimed to examine whether brief VR exposures combining (1) embodiment in a virtual body as one's younger self and (2) immersion in an iconic past event improve age-related subjective and performance outcomes compared with a current-self VR control condition. We carried out a between-groups study with 23 healthy older adults (aged 65-85 years; mean age 71.2, SD 4.03 years). Participants were randomly allocated to either a Young Self condition (n=11; mean 72.3, SD 4.17), where they were embodied in a virtual body that looked like themselves from the 1960s, or in a Current Self control condition (n=12; mean 70.1, SD 3.75), where participants were embodied in their current body. There were 5 sessions. In Session 1, participants completed a baseline assessment. There were then 2 VR exposures, approximately 1 week apart (Sessions 2-3), and follow-ups at 1 week (Session 4) and approximately 2 weeks (Session 5) after the final VR exposure. Outcomes included subjective age, awareness of age-related change, World Health Organization-Five Well-Being Index, Trail Making Test performance, and physical functioning (eg, grip strength). A hierarchical Bayesian analysis revealed that 1 week after the final VR exposure, those in the Young Self condition demonstrated lower subjective age than those in the Current Self condition (prob=.95). They had higher awareness of positive age-related change (prob=.89) and a higher score on the World Health Organization-Five Well-Being Index. Moreover, with respect to performance variables, they took less time to trace a trail, made fewer mistakes in doing so, had greater right-hand and left-hand grip strength. However, 2 weeks after their final VR exposure, these differences diminished apart from positive awareness of age-related change, trail-making mistakes, and left-hand grip strength. The results demonstrate that even 2 short VR exposures, where people were embodied in their younger body and immersed in an iconic event from more than 50 years earlier, resulted in improvement in some age-related responses. This is encouraging for further research with more extensive VR experiences over a longer time period..</p></div></details></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 0-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo8" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Multisensory experiences of affective touch in virtual reality enhance engagement, body ownership, pleasantness, and arousal modulation</h2>
+<p class="item-intro text-muted">Exploring the advantages of touch in Immersive Virtual Worlds.</p>
+<video class="video-portfolio" controls="" src="assets/img/portfolio/touch.mp4" type="video/MP4"></video>
+<br/>
+<div class="project-snapshot"><strong>At a glance — </strong>This study examined whether visual social-touch cues alone can create a convincing affective-touch experience in VR, and how haptic feedback and context shape engagement, body ownership, and pleasantness.</div><ul class="publication-meta"><li>Wenhan Sun, Domna Banakou, Justyna Swidrak, Irene Valori, Mel Slater &amp; Merle T. Fairhurst</li><li> Virtual Reality 28, 162, 18 October 2024</li><li>doi:<a class="one" href="https://link.springer.com/article/10.1007/s10055-024-01056-2" target="_blank">10.1007/s10055-024-01056-2</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; supervision; funding acquisition; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A within-participant counterbalanced experiment with 58 adults compared visuo-tactile versus visual-only affective touch across social contexts using self-report and physiological measures.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Demonstrates that haptic feedback is important for realizing the full benefits of affective touch in VR and clarifies how context shapes multisensory social-touch experiences.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">This study examined whether visual social-touch cues alone can create a convincing affective-touch experience in VR, and how haptic feedback and context shape engagement, body ownership, and pleasantness.</span></summary><div class="abstract-full"><p>When engaging in physical contact, our emotional response hinges not only on the nuanced sensory details and the receptive properties of the skin but also on contextual cues related to the situation and interpersonal dynamics. The consensus is that the nature of the affective interactive experience in social touch is shaped by a combination of ascending, C-tactile (CT) afferents mediated somatosensory information, and modulatory, top-down information. The question we pose here is whether, in the absence of somatosensory input, multisensory cues alone can suffice to create a genuinely pleasant, authentic, and engaging experience in virtual reality. The study aims to explore how affective touch is perceived in immersive virtual environments, considering varied social norms in neutral settings or settings like a physiotherapy room where the touch provider is a healthcare professional. We conducted an experiment with 58 male and female healthy adults, where we employed a within-group counterbalanced design featuring two factors: (a) visuo-tactile affective touch, and (B) visual-only affective touch. Findings, drawn from questionnaires and collected physiological data, shed light on how contextual factors influence implicit engagement, self-reported embodiment, co-presence, as well as the perceived realism and pleasantness of the touch experience. Our findings, in line with the literature, indicate that to experience the advantages of touch in immersive virtual worlds, it is essential to incorporate haptic feedback, as depending solely on visual input may not be adequate for fully realising the optimal benefits of interpersonal touch. Furthermore, in contradiction with our hypothesis, a less ambiguous context (specifically, the physiotherapy room and touch from a physiotherapist) is not linked to heightened touch pleasantness.</p></div></details></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo7" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Desensitizing Anxiety Through Imperceptible Change: Feasibility Study on a Paradigm for Single-Session Exposure Therapy for Fear of Public Speaking </h2>
+<p class="item-intro text-muted">A feasibility study to assess single-session VRET for Fear of Public Speaking.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/QFvJMPmdsDE" width="720px"></iframe>
+<br/>
+<div class="project-snapshot"><strong>At a glance — </strong>We tested a single-session VR exposure paradigm in which a virtual therapist gradually transforms into an audience, comparing it with conventional multi-session exposure for public-speaking anxiety.</div><ul class="publication-meta"><li>Domna Banakou, Tania Johnston, Alejandro Beacco, Gizem Senel &amp; Mel Slater</li><li>JMIR Form Res 2024;8:e52212, 22 July 2024</li><li>doi:<a class="one" href="https://formative.jmir.org/2024/1/e52212" target="_blank">10.2196/52212</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A feasibility study with 45 participants compared single-session gradual-change VRET, five-session conventional VRET, and a control condition.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Establishes the feasibility of compressing public-speaking VRET into a single gradual-change session that performed at least as well as a conventional multi-session format in this study.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">We tested a single-session VR exposure paradigm in which a virtual therapist gradually transforms into an audience, comparing it with conventional multi-session exposure for public-speaking anxiety.</span></summary><div class="abstract-full"><p>Exposure therapy (ET) for anxiety disorders involves introducing the participant to an anxiety-provoking situation over several treatment sessions. Each time, the participant is exposed to a higher anxiety-provoking stimulus; for example, in the case of fear of heights, the participant would successively experience being at a greater height. ET is effective, and its counterpart, virtual reality (VR) exposure therapy (VRET), where VR substitutes real-world exposure, is equally so. However, ET is time-consuming, requiring several sessions. This study aimed to compare the results of single-session exposure with those of traditional VRET with regard to reducing public speaking anxiety. We introduced a paradigm concerned with public speaking anxiety where the VR exposure occurred in a single session while the participant interacted with a virtual therapist. Over time, the therapist transformed into an entire audience with almost imperceptible changes. We carried out a feasibility study with 45 participants, comparing 3 conditions: single-session exposure (n=16, 36%); conventional multiple-session exposure (n=14, 31%), where the same content was delivered in successive segments over 5 sessions; and a control group (n=15, 33%), who interacted with a single virtual character to talk about everyday matters. A week later, the participants were required to speak on a stage in front of a large audience in VR. Across most of the series of conventional public speaking anxiety measures, the single-session exposure was at least as effective in reducing anxiety as the multiple-session exposure, and both these conditions were better than the control condition. The 12-item Personal Report of Confidence as a Speaker was used to measure public speaking anxiety levels, where higher values indicated more anxiety. Using a Bayesian model, the posterior probabilities of improvement compared to a high baseline were at least 1.7 times greater for single- and multiple-session exposures compared to the control group. The State Perceived Index of Competence was used as a measure of anticipatory anxiety for speaking on a stage in front of a large audience, where lower values indicated higher anxiety. The probabilities of improvement were just over 4 times greater for single- and multiple-session exposures compared to the control group for a low baseline and 489 (single) and 53 (multiple) times greater for a middle baseline. Overall, the results of this feasibility study show that for moderate public speaking anxiety, the paradigm of gradual change in a single session is worth following up with further studies with more severe levels of anxiety and a larger sample size, first with a randomized controlled trial with nonpatients and subsequently, if the outcomes follow those that we have found, with a full clinical trial with patients.</p></div></details></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 0-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo0" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Gesture Performance Deficits in Schizophrenia </h2>
+<p class="item-intro text-muted">A VR Study Protocol to Assess Gesture Performance Accuracy in Schizophrenia Patients.</p>
+<video class="video-portfolio" controls="" src="assets/img/portfolio/apraxia.MP4" type="video/MP4"></video>
+<br/>
+<div class="project-snapshot"><strong>At a glance — </strong>This project investigated VR as an objective way to assess gesture-production deficits in people with schizophrenia using full-body embodiment and tracked upper-body movements.</div><ul class="publication-meta"><li>Anastasia Pavlidou, Geoffrey Gorisse, <br/>Domna Banakou &amp; Sebastian Walther</li><li>Front. Psychiatry, 9 June 2023</li><li>doi:<a class="one" href="https://www.frontiersin.org/articles/10.3389/fpsyt.2023.1191601/full" target="_blank">10.3389/fpsyt.2023.1191601</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A VR protocol based on the Test of Upper Limb Apraxia combined first-person avatar embodiment with hand and elbow tracking to quantify gesture-imitation accuracy.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Supports VR motion tracking as a route toward more objective gesture assessment, with potential to inform future clinical evaluation and rehabilitation tools.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">This project investigated VR as an objective way to assess gesture-production deficits in people with schizophrenia using full-body embodiment and tracked upper-body movements.</span></summary><div class="abstract-full"><p>Gesture performance deficits are prevalent in schizophrenia patients and are strongly associated with poor social communication skills and community functioning, affecting their overall quality of life. Currently, video-recording technology is widely used in clinical settings to assess gesture production deficits in schizophrenia patients. Nevertheless, the subjective evaluation of video-recordings can encumber task assessment. The present study will aim to use virtual reality to examine its potential use as an alternative tool to objectively measure gesture performance accuracy in schizophrenia patients and healthy controls. Gesture performance in the virtual reality setting will be based on the well-established Test of Upper Limb Apraxia. Participants will be immersed in a virtual environment where they will experience themselves being embodied in a collocated virtual body seen from a first-person perspective. Motion trackers will be placed on participants' hands and elbows to track upper body movements in real-time, and to record gesture movement for later analysis. Participants will see a virtual agent sitting across from them, with a virtual table in between. The agent will perform various types of gestures and the participants' task will be to imitate those gestures as accurately as possible. Measurements from the tracking devices will be stored and analyzed to address gesture performance accuracy across groups. This study aims to provide objective measurements of gesture performance accuracy in schizophrenia patients. If successful, the results will provide new knowledge to the gesture literature and offer the potential for novel therapeutic interventions using virtual reality technologies. Such interventions can improve gesturing and thus advance social communication skills in schizophrenia patients.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 1-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo1" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Implicit Bias and Social Context</h2>
+<p class="item-intro text-muted">Virtual body ownership and changes in implicit racial bias dependent
+                                        on the social context.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/AToran81-Rc" width="720px"></iframe>
+<br/>
+<div class="project-snapshot"><strong>At a glance — </strong>This study asked whether the social context surrounding virtual embodiment changes its effect on implicit racial bias, showing that negative contexts can weaken body ownership and reverse expected bias-reduction effects.</div><ul class="publication-meta"><li>Domna Banakou, Alejandro Beacco, <br/>Solène Neyret, Marta Blasco-Oliver, Sofia Seinfeld &amp; Mel Slater</li><li>R. Soc. Open Sci., 9 Dec 2020</li><li>doi:<a class="one" href="https://royalsocietypublishing.org/doi/10.1098/rsos.201848" target="_blank">10.1098/rsos.201848</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A 2×3 between-groups design with 92 White women varied avatar skin color and surrounding crowd affect while measuring body ownership and implicit racial bias.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Shows that embodiment is not automatically an ‘empathy machine’: negative social context can undermine body ownership and the expected reduction in implicit bias.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">This study asked whether the social context surrounding virtual embodiment changes its effect on implicit racial bias, showing that negative contexts can weaken body ownership and reverse expected bias-reduction effects.</span></summary><div class="abstract-full"><p>When people hold implicit biases against a group they typically engage in discriminatory behaviour against group members. In the context of the implicit racial bias of ‘white’ against 'black' people, it has been shown several times that implicit bias is reduced after a short exposure of embodiment in a dark-skinned body in virtual reality. Embodiment usually leads to the illusion of ownership over the virtual body, irrespective of its skin colour. Previous studies have been carried out in virtual scenarios that are affectively neutral or positive. Here, we show that when the scenario is affectively negative the illusion of body ownership of white participants over a white body is lessened, and implicit bias is higher for white participants in a black virtual body. The study was carried out with 92 white female participants, in a between-groups design with two factors: BodyType (their virtual body was White or Black) and a surrounding Crowd was Negative, Neutral or Positive towards the participant. We argue that negative affect prevents the formation of new positive associations with black and distress leads to disownership of the virtual body. Although virtual reality is often thought of as an ‘empathy machine’ our results suggest caution, that this may not be universally the case.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 2-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo2" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">BEinstein</h2>
+<p class="item-intro text-muted">Being Einstein in Immersive Virtual Reality.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/TAEM5OlFbnw" width="720px"></iframe><br/>
+<div class="project-snapshot"><strong>At a glance — </strong>We tested whether embodying a young adult as Albert Einstein could influence cognition and implicit age bias, finding improvements in executive functioning for some participants and reduced bias against older people.</div><ul class="publication-meta"><li>Domna Banakou, Sameer Kishore &amp; Mel Slater</li><li>Front. Psychol., 11 June 2018</li><li>doi:<a class="one" href="https://doi.org/10.3389/fpsyg.2018.00917" target="_blank">10.3389/fpsyg.2018.00917</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">An experimental embodiment study compared an Einstein avatar with an age-matched control avatar and measured executive functioning, self-esteem interactions, and implicit age bias.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Provides evidence that virtual body identity can influence not only perception and attitudes but also aspects of cognitive performance.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">We tested whether embodying a young adult as Albert Einstein could influence cognition and implicit age bias, finding improvements in executive functioning for some participants and reduced bias against older people.</span></summary><div class="abstract-full"><p>The brain's body representation is amenable to rapid change, even though we tend to think of our bodies as relatively fixed and stable. For example, it has been shown that a life-sized body perceived in virtual reality as substituting the participant's real body, can be felt as if it were their own, and that the body type can induce perceptual, attitudinal and behavioral changes. Here we show that changes can also occur in cognitive processing and specifically, executive functioning. Young male participants were embodied in either a virtual body that signifies super-intelligence (Einstein) or a (Normal) virtual body of similar age to their own. The Einstein body participants performed better on a cognitive task than the Normal body, considering prior cognitive ability (IQ), with the improvement greatest for those with low self-esteem. Einstein embodiment also reduced implicit bias against older people. Hence virtual body ownership may additionally be used to enhance executive functioning.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 3-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo3" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Parental Empathy</h2>
+<p class="item-intro text-muted">Improving maternal perspective-taking and empathy using virtual embodiment.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/u6rAZGsT9hE" width="720px"></iframe>
+<div class="project-snapshot"><strong>At a glance — </strong>Mothers were embodied as a four-year-old child to test whether experiencing positive or negative maternal behavior from the child's perspective could influence empathy and perspective-taking.</div><ul class="publication-meta"><li>Catherine Hamilton-Giachritsis, Domna Banakou, <br/> Manuela Garcia Quiroga, Christos Giachritsis &amp; Mel Slater</li><li>Sci Rep., 14 Feb 2018</li><li>doi:<a class="one" href="https://www.nature.com/articles/s41598-018-21036-2" target="_blank">10.1038/s41598-018-21036-2</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">Immersive first-person child embodiment with synchronized movement compared positive versus negative behavior from a mother avatar and measured empathy, fear, and physiological stress.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Demonstrates the potential of child-perspective embodiment to evoke empathy and emotional responses relevant to parenting interventions and training.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">Mothers were embodied as a four-year-old child to test whether experiencing positive or negative maternal behavior from the child's perspective could influence empathy and perspective-taking.</span></summary><div class="abstract-full"><p>The ability to perspective-take (cognitive awareness of another’s state) and empathise (emotional/affective response) are important characteristics for sensitive, co-operative and constructive parenting, which assists in developing adaptive functioning for children. For the first time, immersive virtual reality was used to place parents in the position of a child in order to assess impact on perspective-taking and empathy. This novel study was conducted with non-high risk Spanish mothers. Mothers were virtually embodied as a 4-year-old child, experienced from the first-person perspective and with virtual and real body movements synchronised. They interacted with a ‘mother avatar’, which responded either in a Positive or Negative way. Participants reported a strong body ownership illusion for the child body that led to cognitive, emotional and physical reactions. Experiencing negative maternal behavior increased levels of empathy. In addition, the Negative mother led to increased feelings of fear of violence. Physiological data indicated greater stress in the Negative than Positive condition. Although further research is required to assess the effectiveness of such methods, any improvement in empathy that leads to a change in parenting behavior has the potential to impact on developmental outcomes for children.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 4-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo4" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Illusory Agency</h2>
+<p class="item-intro text-muted">Speaking with your avatar's voice.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/_gw-7SbUxUQ" width="720px"></iframe>
+<div class="project-snapshot"><strong>At a glance — </strong>This study examined how ownership of a speaking virtual body can create an illusory sense of agency over speech, even when the participant did not generate the words.</div><ul class="publication-meta"><li>Domna Banakou &amp; Mel Slater</li><li>PNAS, 9 Dec 2014</li><li>doi:<a class="one" href="https://www.pnas.org/content/111/49/17678.abstract" target="_blank">10.1073/pnas.1414936111</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">An experiment with 44 participants manipulated visuomotor synchrony and vibrotactile feedback while a first-person virtual body appeared to speak.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Shows that body ownership can contribute to false self-attribution of speech, extending theories of agency to include ownership of the virtual body.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">This study examined how ownership of a speaking virtual body can create an illusory sense of agency over speech, even when the participant did not generate the words.</span></summary><div class="abstract-full"><p>When we carry out an act, we typically attribute the action to ourselves, the sense of agency. Explanations for agency include conscious prior intention to act, followed by observation of the sensory consequences; brain activity that involves the feed-forward prediction of the consequences combined with rapid inverse motor prediction to fine-tune the action in real time; priming where there is, e.g., a prior command to perform the act; a cause (the intention to act) preceding the effect (the results of the action); and common-sense rules of attribution of physical causality satisfied. We describe an experiment where participants falsely attributed an act to themselves under conditions that apparently cannot be explained by these theories. A life-sized virtual body seen from the first-person perspective in 3D stereo, as if substituting the real body, was used to induce the illusion of ownership over the virtual body. Half of the 44 experimental participants experienced virtual body movements that were synchronous with their own movements (sync), and the other half asynchronous (async). The virtual body, seen in a mirror, spoke with corresponding lip movements, and for half of the participants this was accompanied by synchronous vibrotactile stimulation on the thyroid cartilage but this was not so for the other half. Participants experiencing sync misattributed the speaking to themselves and also shifted the fundamental frequency of their later utterances toward the stimulus ice. Synchronous vibrotactile stimulation also contributed to these results. We show that these findings can be explained by current theories of agency, provided that the critical role of ownership over the virtual body is taken into account.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 5-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo5" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Implicit Racial Bias</h2>
+<p class="item-intro text-muted">Embodying a Black virtual body leads to a sustained reduction in racial bias.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/RcBJ1sCPv_I" width="720px"></iframe>
+<div class="project-snapshot"><strong>At a glance — </strong>We tested whether embodying White participants in a Black virtual body could reduce implicit racial bias beyond the immediate VR session and whether repeated exposures strengthened the effect.</div><ul class="publication-meta"><li>Domna Banakou, Parasuram D. Hanumanthu &amp; Mel Slater</li><li>Front. Hum. Neurosci., 29 Nov 2016</li><li>doi:<a class="one" href="https://www.frontiersin.org/articles/10.3389/fnhum.2016.00601/full" target="_blank">10.3389/fnhum.2016.00601</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A repeated-exposure VR experiment with 90 women compared Black versus White avatar embodiment and measured implicit racial bias before and one week after exposure.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact / Why it matters</div><p class="project-detail-value">Shows that reduced implicit racial bias after Black-avatar embodiment can persist for at least a week, suggesting effects beyond the immediate VR experience.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">We tested whether embodying White participants in a Black virtual body could reduce implicit racial bias beyond the immediate VR session and whether repeated exposures strengthened the effect.</span></summary><div class="abstract-full"><p>Virtual reality can be used to visually substitute a person's body by a life-sized virtual one. Such embodiment results in a perceptual illusion of body ownership over the virtual body. Previous research has shown that the form of the virtual body can influence implicit attitudes. In particular, embodying White people in a Black virtual body is associated with an immediate decrease in their implicit racial bias against Black people. We tested whether the reduction in implicit bias lasts for at least 1 week and whether it is enhanced by multiple exposures. Ninety (90) female participants where the virtual body was either Black or White. Participants were required to follow a virtual Tai Chi teacher who was either Asian or European Caucasian. Each participant had 1, 2, or 3 exposures separated by days. Implicit racial bias was measured 1 week before their first exposure and 1 week after their last. The results show that implicit bias decreased more for those with the Black virtual body than the White. There was also some evidence of a general decrease in bias independently of body type for which possible explanations are put forward.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 6-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="ytvideo6" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">Child Embodiment</h2>
+<p class="item-intro text-muted">Experiencing being a child in Virtual Reality.</p>
+<iframe allowfullscreen="" height="550px" src="https://www.youtube.com/embed/8Oy83OVgbSM" width="720px"></iframe>
+<div class="project-snapshot"><strong>At a glance — </strong>Adults were embodied either as a four-year-old child or a height-matched adult to test how virtual body form changes size perception and implicit self-associations.</div><ul class="publication-meta"><li>Domna Banakou, Raphaela Groten &amp; Mel Slater</li><li>PNAS, 30 July 2013</li><li>doi:<a class="one" href="https://www.pnas.org/content/110/31/12846.abstract" target="_blank">10.1073/pnas.1306779110</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">Two experiments compared synchronized child-body versus scaled-adult embodiment using size-estimation and implicit-association measures, with an asynchronous control.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Established that the form of an embodied virtual body can alter object-size perception and implicit self-associations, linking body ownership to downstream perception and attitudes.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">Adults were embodied either as a four-year-old child or a height-matched adult to test how virtual body form changes size perception and implicit self-associations.</span></summary><div class="abstract-full"><p>An illusory sensation of ownership over a surrogate limb or whole body can be induced through specific forms of multisensory stimulation, such as synchronous visuotactile tapping on the hidden real and visible rubber hand in the rubber hand illusion. Such methods have been used to induce ownership over a manikin a virtual body that substitute the real body, as seen from first-person perspective, through a head-mounted display. However, the perceptual and behavioral consequences of such transformed body ownership have hardly been explored. Immersive virtual reality was used to embody 30 adults as a 4-y-old child, and as an adult body scaled to the same height as the child, experienced from the first-person perspective, and with virtual and real body movements synchronized. The result was a strong body-ownership illusion equally for child and scaled-down adult. Moreover there was an overestimation of the sizes of objects compared with a nonembodied baseline, which was significantly greater for the child condition compared with the scaled-down adult condition. An implicit association test showed that being in a child's body resulted in significantly faster reaction times for the classification of self with child-like compared with adult-like attributes. A second experiment with an additional 16 participants extinguished the ownership illusion by using visuomotor asynchrony, with all else equal. The size-estimation and implicit association test differences between child and scaled-down adult were also extinguished, demonstrating perceptual and behavioral correlates of body-ownership illusions that occur as a function of the type of body in which embodiment occurs.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 7-->
+<div aria-hidden="true" class="portfolio-modal modal fade" id="modalvideo1" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="close-modal" data-dismiss="modal"><img alt="Close modal" src="assets/img/close-icon.svg"/></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="modal-body">
+<!-- Project Details Go Here-->
+<h2 class="text-uppercase">A child's Voice</h2>
+<p class="item-intro text-muted">The embodiment illusion depends on the voice 
+                                                feedback being congruent with the age of the virtual body.</p>
+<video class="video-portfolio" controls="" src="assets/img/portfolio/childvoice.mov" type="video/mov"></video>
+<div class="project-snapshot"><strong>At a glance — </strong>This study tested whether voice feedback that matches the apparent age of a virtual body strengthens the illusion of embodiment and its perceptual and attitudinal effects.</div><ul class="publication-meta"><li>Ana Tajadura-Jiménez, Domna Banakou, <br/>Nadia Bianchi-Berthouze &amp; Mel Slater</li><li>Sci Rep., 14 March 2018</li><li>doi:<a class="one" href="https://www.nature.com/articles/s41598-017-09497-3" target="_blank">10.1038/s41598-017-09497-3</a></li></ul><div class="project-case-study"><div class="project-detail-row"><div class="project-detail-label">My role</div><p class="project-detail-value role-placeholder">Conceptualisation; methodology; VR development; software; investigation; data curation; analysis; writing.</p></div><div class="project-detail-row"><div class="project-detail-label">Approach</div><p class="project-detail-value">A 2×2 factorial experiment varied child versus scaled-adult visual embodiment and child-like versus natural voice feedback, measuring embodiment, size perception, and implicit attitudes.</p></div><div class="project-detail-row"><div class="project-detail-label">Impact</div><p class="project-detail-value">Shows that age-congruent voice feedback contributes to the strength of virtual embodiment, highlighting the role of multisensory consistency in body-ownership illusions.</p></div></div><details class="publication-abstract"><summary><span class="abstract-heading"><span>Publication abstract</span><span aria-hidden="true" class="abstract-toggle"></span></span><span class="abstract-preview">This study tested whether voice feedback that matches the apparent age of a virtual body strengthens the illusion of embodiment and its perceptual and attitudinal effects.</span></summary><div class="abstract-full"><p>People's mental representations of their own body are malleable and continuously updated through sensory cues. Altering one's body-representation can lead to changes in object perception and implicit attitudes. Virtual reality has been used to embody adults in the body of a 4-year-old child or a scaled-down adult body. Child embodiment was found to cause an overestimation of object sizes, approximately double that during adult embodiment, and identification of the self with child-like attributes. Here we tested the contribution of auditory cues related to one's own voice to these visually-driven effects. In a 2 × 2 factorial design, visual and auditory feedback on one's own body were varied across conditions, which included embodiment in a child or scaled-down adult body, and real (undistorted) or child-like voice feedback. The results replicated, in an older population, previous findings regarding size estimations and implicit attitudes. Further, although auditory cues were not found to enhance these effects, we show that the strength of the embodiment illusion depends on the child-like voice feedback being congruent or incongruent with the age of the virtual body. Results also showed the positive emotional impact of the illusion of owning a child's body, opening up possibilities for health applications.</p></div></details>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal 8-->
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- <script src="js/video.js"></script> -->
+</body>
+</html>
