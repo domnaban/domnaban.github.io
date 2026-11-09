@@ -665,6 +665,19 @@ pre code {
   perspective: 2px;
 }
 
+
+.intro-citation-banner {
+  display: block;
+  max-width: 48rem;
+  margin: 0 auto 1.5rem;
+}
+
+.intro-citation-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .parallax {
   /* The image used */
   background-image: url("../assets/img/headers/header-intro.jpg");
@@ -763,7 +776,13 @@ pre code {
      //padding-bottom: 40px
  }
 
-@media (min-width: 576px) {
+@media (max-width: 767.98px) {
+    .intro-citation-banner {
+    max-width: 25rem;
+  }
+}
+
+ @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
   }
